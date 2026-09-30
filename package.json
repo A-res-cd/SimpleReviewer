@@ -1,0 +1,29 @@
+{
+  "name": "simple-reviewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:pages": "npm run build && wrangler pages dev dist --ip 0.0.0.0",
+    "build": "tsc -b && tsc -p tsconfig.worker.json && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name simple-reviewer"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "mammoth": "^1.9.1",
+    "pdfjs-dist": "^6.3.289",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "wrangler": "^4.0.0"
+  }
+}

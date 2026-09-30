@@ -1,0 +1,11 @@
+name = "simple-reviewer"
+compatibility_date = "2026-09-27"
+pages_build_output_dir = "./dist"
+
+[ai]
+binding = "AI"
+remote = true
+
+[[kv_namespaces]]
+binding = "USAGE"
+id = "b29aa5e187564d419499346169fc2c6e"
